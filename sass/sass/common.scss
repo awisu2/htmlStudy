@@ -1,0 +1,12 @@
+$red:#FF3399;
+
+.red {
+  color: $red;
+
+  & .warning {
+    font-weight: bold;
+  }
+  & .info {
+    font-weight: bold;
+  }
+}
