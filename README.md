@@ -5,7 +5,7 @@ sassフォルダは、sassコマンドに依存して利用することができ
 sass comvert
 ------------
 
-`sass --watch sass:css --style compressed`
+`docker-compose up` or `sass --watch sass:css --style compressed`
 
 ### sass command install
 

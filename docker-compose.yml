@@ -1,0 +1,10 @@
+version: '2'
+services:
+  scss:
+    build:
+      context: ./
+      dockerfile: docker/Dockerfile
+    working_dir: /var/sass
+    volumes:
+      - .:/var/sass
+    command: sass --watch sass:css --style compressed
