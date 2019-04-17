@@ -1,3 +1,20 @@
+$thin-gray1: #f0f0f0;
+$thin-gray2: #f9f9f9;
+$thin-gray3: #fefefe;
+
+$gray1: #aaa;
+$gray2: #bbb;
+$gray3: #ccc;
+$gray4: #ddd;
+$gray5: #eee;
+
+$dark-gray1: #666;
+$dark-gray2: #888;
+
+$common-padding: 3px;
+$common-margin-bottom: 5px;
+$common-border-radius: 5px;
+
 * {
   margin      : 0;
   padding     : 0;
@@ -5,8 +22,21 @@
   color: #666;
 }
 
+h2, h3, h4, h5, h6, section, p {
+  margin-bottom: $common-margin-bottom;
+}
+
+section {
+  padding: $common-padding;
+  border-bottom: dashed 1px $gray1;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
 button {
-  padding: 3px;
+  padding: $common-padding;
   cursor: pointer;
 }
 
@@ -23,7 +53,7 @@ button {
 }
 
 header, footer, .content, .nav {
-  padding: 3px;
+  padding: $common-padding;
 }
 
 html, body {
@@ -32,42 +62,58 @@ html, body {
 
 header {
   grid-area: header;
-  background-color: #aeaeae;
+  background-color: $thin-gray1;
 }
 
 .content {
   grid-area: content;
-  background-color: #f0f0f0;
-  margin-right: 5px;
+  background-color: $thin-gray2;
+  margin-right: $common-margin-bottom;
 }
 
 .nav {
   grid-area: nav;
-  background-color: #f0f0f0;
+  background-color: $thin-gray3;
 }
 
 footer {
   grid-area: footer;
-  background-color: #aeaeae;
+  background-color: $thin-gray1;
 }
 
 /* flex  */
 .flex-box {
   display: flex;
-  margin-bottom: 10px;
+  border: solid 1px $gray1;
+  border-radius: $common-border-radius;
+  padding: $common-padding;
+  margin-bottom: $common-margin-bottom;
+
+  > div {
+    padding: $common-padding;
+  }
+
+  > div:nth-child(odd) {
+    background-color: $gray1;
+  }
+  > div:nth-child(even) {
+    background-color: $gray4;
+  }
 }
 
-.flex-box--1 > div {
-  flex: 1;
+.flex-box--1 {
+  > div {
+    flex: 1;
+  }
 }
 
 .flex-box--2 {
   > div:nth-child(1) {
-    flex: 2;
+    flex: 1;
   }
 
   > div:nth-child(2) {
-    flex: 1;
+    flex: 5;
   }
 }
 
@@ -79,29 +125,24 @@ footer {
   }
 
   > div:nth-child(1) {
-    background-color: #aaa;
     width: 100px;
   }
 
   > div:nth-child(2) {
-    background-color: #bbb;
     width: 200px;
   }
 
   > div:nth-child(3) {
-    background-color: #ccc;
     width: 150px;
   }
 
   > div:nth-child(4) {
-    background-color: #ddd;
     width: 50px;
   }
 }
 
 .flex-box--4 {
   align-items: center;
-  background-color: #666;
 
   &.reverse {
     flex-direction: row-reverse;
@@ -112,23 +153,18 @@ footer {
   }
 
   > div:nth-child(1) {
-    background-color: #aaa;
     height: 100px;
   }
 
   > div:nth-child(2) {
-    background-color: #bbb;
     height: 200px;
   }
 
   > div:nth-child(3) {
-    background-color: #ccc;
     height: 150px;
   }
 
   > div:nth-child(4) {
-    background-color: #ddd;
     height: 50px;
   }  
 }
-
