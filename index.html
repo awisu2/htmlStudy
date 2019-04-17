@@ -35,9 +35,11 @@
         <section>
           <h3>均等配置 2</h3>
           <div class="flex-box flex-box--2">
-            <div>flex: 1</div>
-            <div>flex: 5</div>
+            <div>flex: 3</div>
+            <div :style="'flex: ' + arg.flexBox2Flex2 + ';'">flex: {{arg.flexBox2Flex2}}</div>
+            <div>flex: 4</div>
           </div>
+          flex: <input type="number" v-model="arg.flexBox2Flex2">
         </section>
 
         <section>
@@ -86,6 +88,7 @@
         // current: 'top'
         current: 'flex',
         arg: {
+          flexBox2Flex2: 2,
           flexBox3: false,
           flexBox4: false
         }
