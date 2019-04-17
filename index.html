@@ -20,8 +20,11 @@
       <div v-if="current==='top'">
         <h2>top</h2>
       </div>
+
       <div v-if="current==='flex'">
         <h2>flex</h2>
+
+        <h3>均等配置</h3>
         <div class="flex-box flex-box--1">
           <div>
             flex: 1
@@ -30,33 +33,37 @@
             flex: 1
           </div>
         </div>
-      </div>
-
-      <div class="flex-box flex-box--2">
-        <div>
-          flex: 2
-        </div>
-        <div>
-          flex: 1
-        </div>
-      </div>
-
-      <div :class="'flex-box flex-box--3' + (arg.flexBox3 ? ' reverse' : '')">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-      </div>
-      <button @click="arg.flexBox3 = !arg.flexBox3">flex-direction: row-reverse;</button>
-
-      <div :class="'flex-box flex-box--4' + (arg.flexBox4 ? ' reverse': '')">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-      </div>
-      <button @click="arg.flexBox4 = !arg.flexBox4">flex-direction: row-reverse;</button>
   
+        <div class="flex-box flex-box--2">
+          <div>
+            flex: 2
+          </div>
+          <div>
+            flex: 1
+          </div>
+        </div>
+
+        <h3>子コンテンツのwidth,heightに合わせた 中央、縦中央そろえ</h3>
+        <div :class="'flex-box flex-box--3' + (arg.flexBox3 ? ' reverse' : '')">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+        </div>
+        <button @click="arg.flexBox3 = !arg.flexBox3">flex-direction: row-reverse;</button>
+
+        <div :class="'flex-box flex-box--4' + (arg.flexBox4 ? ' reverse': '')">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+        </div>
+        <button @click="arg.flexBox4 = !arg.flexBox4">flex-direction: row-reverse;</button>
+        <p>
+          <strong>flex-direction</strong>: row, row-reverseは、<strong>書式方向(横)</strong>に合わせる。 column, column-reverseは、<strong>ブロック軸(縦)</strong>に合わせる。
+        </p>
+
+      </div>
     </section>
 
     <section class="nav">
