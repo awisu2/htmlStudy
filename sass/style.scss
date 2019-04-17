@@ -40,6 +40,12 @@ button {
   cursor: pointer;
 }
 
+.info {
+  border: solid 1px $gray1;
+  border-radius: $common-border-radius;
+  padding: $common-padding;
+}
+
 /* grid  */
 .app {
   display: grid;
@@ -165,5 +171,32 @@ footer {
 
   > div:nth-child(4) {
     height: 50px;
+  }  
+}
+
+.flex-box--5 {
+  flex-direction: column;
+  &.reverse {
+    flex-direction: column-reverse;
+  }
+
+  > div:nth-child(1) {
+    width: 20px;
+    height: 20px;
+  }
+
+  > div:nth-child(2) {
+    width: 40px;
+    height: 40px;
+  }
+
+  > div:nth-child(3) {
+    width: 30px;
+    height: 30px;
+  }
+
+  > div:nth-child(4) {
+    width: 20px;
+    height: 20px;
   }  
 }
