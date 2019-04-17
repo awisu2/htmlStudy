@@ -41,12 +41,13 @@
         </div>
       </div>
 
-      <div class="flex-box flex-box--3">
+      <div :class="'flex-box flex-box--3' + (arg.flexBox3 ? ' reverse' : '')">
         <div>1</div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
       </div>
+      <button @click="arg.flexBox3 = arg.flexBox3 ? false : true">flex-direction: row-reverse;</button>
 
       <div class="flex-box flex-box--4">
         <div>1</div>
@@ -74,7 +75,10 @@
       el: '#app',
       data: {
         // current: 'top'
-        current: 'flex'
+        current: 'flex',
+        arg: {
+          flexBox3: false
+        }
       },
       computed: {
       },
