@@ -47,14 +47,15 @@
         <div>3</div>
         <div>4</div>
       </div>
-      <button @click="arg.flexBox3 = arg.flexBox3 ? false : true">flex-direction: row-reverse;</button>
+      <button @click="arg.flexBox3 = !arg.flexBox3">flex-direction: row-reverse;</button>
 
-      <div class="flex-box flex-box--4">
+      <div :class="'flex-box flex-box--4' + (arg.flexBox4 ? ' reverse': '')">
         <div>1</div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
       </div>
+      <button @click="arg.flexBox4 = !arg.flexBox4">flex-direction: row-reverse;</button>
   
     </section>
 
@@ -77,7 +78,8 @@
         // current: 'top'
         current: 'flex',
         arg: {
-          flexBox3: false
+          flexBox3: false,
+          flexBox4: false
         }
       },
       computed: {
