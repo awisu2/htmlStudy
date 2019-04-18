@@ -1,2 +1,73 @@
-.flex-box{display:flex;border:solid 1px #aaa;border-radius:5px;padding:3px;margin-bottom:5px}.flex-box>div{padding:3px}.flex-box>div:nth-child(odd){background-color:#aaa}.flex-box>div:nth-child(even){background-color:#ddd}.flex-box--1>div{flex:1}.flex-box--2>div:nth-child(1){flex:3}.flex-box--2>div:nth-child(3){flex:4}.flex-box--3{justify-content:center}.flex-box--3.reverse{flex-direction:row-reverse}.flex-box--3>div:nth-child(1){width:100px}.flex-box--3>div:nth-child(2){width:200px}.flex-box--3>div:nth-child(3){width:150px}.flex-box--3>div:nth-child(4){width:50px}.flex-box--4{align-items:center}.flex-box--4.reverse{flex-direction:row-reverse}.flex-box--4>div{width:50px}.flex-box--4>div:nth-child(1){height:100px}.flex-box--4>div:nth-child(2){height:200px}.flex-box--4>div:nth-child(3){height:150px}.flex-box--4>div:nth-child(4){height:50px}.flex-box--5{flex-direction:column}.flex-box--5.reverse{flex-direction:column-reverse}.flex-box--5>div:nth-child(1){width:20px;height:20px}.flex-box--5>div:nth-child(2){width:40px;height:40px}.flex-box--5>div:nth-child(3){width:30px;height:30px}.flex-box--5>div:nth-child(4){width:20px;height:20px}
-/*# sourceMappingURL=flex.css.map */
+/*
+Error: Undefined variable: "$gray1".
+        on line 3 of sass/flex.scss
+
+1: .flex-box {
+2:   display: flex;
+3:   border: solid 1px $gray1;
+4:   border-radius: $common-border-radius;
+5:   padding: $common-padding;
+6:   margin-bottom: $common-margin-bottom;
+7: 
+8:   > div {
+
+Backtrace:
+sass/flex.scss:3
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `map'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `_perform'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/usr/local/bundle/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/usr/local/bundle/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/usr/local/bundle/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/usr/local/bundle/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/usr/local/bundle/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/usr/local/bundle/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/local/bundle/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/usr/local/bundle/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$gray1\".\A         on line 3 of sass/flex.scss\A \A 1: .flex-box {\A 2:   display: flex;\A 3:   border: solid 1px $gray1;\A 4:   border-radius: $common-border-radius;\A 5:   padding: $common-padding;\A 6:   margin-bottom: $common-margin-bottom;\A 7: \A 8:   > div {"; }
