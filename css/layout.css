@@ -1,0 +1,71 @@
+/*
+Error: Undefined variable: "$common-padding".
+        on line 13 of sass/layout.scss
+
+8:     "footer footer";
+9:   min-height: 100%;
+10: }
+11: 
+12: header, footer, .content, .nav {
+13:   padding: $common-padding;
+14: }
+15: 
+16: html, body {
+17:   height: 100%;
+18: }
+
+Backtrace:
+sass/layout.scss:13
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/usr/local/bundle/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/usr/local/bundle/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/usr/local/bundle/bin/sass:23:in `load'
+/usr/local/bundle/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$common-padding\".\A         on line 13 of sass/layout.scss\A \A 8:     \"footer footer\";\A 9:   min-height: 100%;\A 10: }\A 11: \A 12: header, footer, .content, .nav {\A 13:   padding: $common-padding;\A 14: }\A 15: \A 16: html, body {\A 17:   height: 100%;\A 18: }"; }

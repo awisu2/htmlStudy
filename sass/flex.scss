@@ -1,19 +1,4 @@
-$thin-gray1: #f0f0f0;
-$thin-gray2: #f9f9f9;
-$thin-gray3: #fefefe;
-
-$gray1: #aaa;
-$gray2: #bbb;
-$gray3: #ccc;
-$gray4: #ddd;
-$gray5: #eee;
-
-$dark-gray1: #666;
-$dark-gray2: #888;
-
-$common-padding: 3px;
-$common-margin-bottom: 5px;
-$common-border-radius: 5px;
+@import "args";
 
 .flex-box {
   display: flex;

@@ -1,6 +1,6 @@
 version: '2'
 services:
-  scss:
+  sass:
     build:
       context: ./
       dockerfile: docker/Dockerfile

@@ -1,0 +1,40 @@
+.app {
+  display: grid;
+  grid-template-rows: 30px 1fr 30px;
+  grid-template-columns: 1fr 200px;
+  grid-template-areas:
+    "header header"
+    "content nav"
+    "footer footer";
+  min-height: 100%;
+}
+
+header, footer, .content, .nav {
+  padding: $common-padding;
+}
+
+html, body {
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+  background-color: $thin-gray1;
+}
+
+.content {
+  grid-area: content;
+  background-color: $thin-gray2;
+  margin-right: $common-margin-bottom;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: $thin-gray3;
+}
+
+footer {
+  grid-area: footer;
+  background-color: $thin-gray1;
+}
+
