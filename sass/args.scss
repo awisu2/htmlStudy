@@ -11,6 +11,18 @@ $gray5: #eee;
 $dark-gray1: #666;
 $dark-gray2: #888;
 
+$blue1: #3765ff;
+
 $common-padding: 3px;
 $common-margin-bottom: 5px;
 $common-border-radius: 5px;
+
+@mixin common-border {
+  border: 1px solid $gray1;
+}
+
+@mixin common-box {
+  @include common-border;
+  padding: $common-padding;
+  margin-bottom: $common-margin-bottom;
+}

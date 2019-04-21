@@ -1,0 +1,8 @@
+.height {
+  @include common-box;
+}
+
+.height--1 {
+  height: 100px;
+  overflow-y: auto;
+}

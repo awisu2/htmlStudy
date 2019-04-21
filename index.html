@@ -23,14 +23,13 @@
 
       <flex v-if="current==='flex'"></flex>
       <overflow v-if="current==='overflow'"></overflow>
-
+      <height v-if="current==='height'"></height>
+      <color v-if="current==='color'"></color>
     </div>
 
     <section class="nav">
       <ul>
-        <li @click="changeCurrent('top')">top</li>
-        <li @click="changeCurrent('flex')">flex</li>
-        <li @click="changeCurrent('overflow')">overflow</li>
+        <li v-for="nav in navs" :key="nav" @click="changeCurrent(nav)">{{nav}}</li>
       </ul>
     </section>
 
@@ -41,11 +40,21 @@
   </div>
   <script src="js/flex.js"></script>
   <script src="js/overflow.js"></script>
+  <script src="js/height.js"></script>
+  <script src="js/color.js"></script>
   <script type="text/javascript">
+    const NAVS =  [
+      'top',
+      'flex',
+      'overflow',
+      'height',
+      'color'
+    ]
     var app = new Vue({
       el: '#app',
       data: {
-        current: 'flex'
+        current: NAVS[3],
+        navs: NAVS
       },
       methods: {
         changeCurrent: function (v) {
