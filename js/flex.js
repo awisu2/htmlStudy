@@ -1,3 +1,9 @@
+const FLEX_WRAPS = [
+  "nowrap",
+  "wrap",
+  "wrap-reverse"
+]
+
 Vue.component('flex', {
   template: `<div>
     <h2>flex</h2>
@@ -61,6 +67,36 @@ Vue.component('flex', {
       </div>
       <button @click="arg.flexBox5Reverse = !arg.flexBox5Reverse">reverse</button>
     </section>
+
+    <section>
+      <h3>flex-wrap: no-wrap/wrap/wrap-reverse</h3>
+      <button @click="flex6WrapIdx = (FLEX_WRAPS.length <= (flex6WrapIdx + 1) ? 0 : flex6WrapIdx + 1)">change</button>
+      {{FLEX_WRAPS[flex6WrapIdx]}}
+      <h4>set flex</h4>
+      <div :class="'flex-box flex-box--6'" :style="'flex-wrap: ' + FLEX_WRAPS[flex6WrapIdx] + ';'">
+        <div v-for="i in 10" :style="'flex: ' + i * 50 + 'px; height: ' + i * 10 + 'px'">{{i * 50}}px</div>
+      </div>
+
+      <h4>set flex%</h4>
+      <div :class="'flex-box flex-box--6'" :style="'flex-wrap: ' + FLEX_WRAPS[flex6WrapIdx] + ';'">
+        <div v-for="i in 10" :style="'flex: ' + i * 5 + '%; height: ' + i * 10 + 'px'">{{i * 5}}%</div>
+      </div>
+
+      <h4>set width</h4>
+      <div :class="'flex-box flex-box--6'" :style="'flex-wrap: ' + FLEX_WRAPS[flex6WrapIdx] + ';'">
+        <div v-for="i in 10" :style="'width: ' + i * 50 + 'px; height: ' + i * 10 + 'px'">{{i * 50}}px</div>
+      </div>
+
+      <h4>set width%</h4>
+      <div :class="'flex-box flex-box--6'" :style="'flex-wrap: ' + FLEX_WRAPS[flex6WrapIdx] + ';'">
+        <div v-for="i in 10" :style="'width: ' + i * 5 + '%; height: ' + i * 10 + 'px'">{{i * 5}}%</div>
+      </div>
+
+      <div :class="'flex-box flex-box--6'" :style="'flex-wrap: ' + FLEX_WRAPS[flex6WrapIdx] + ';'">
+        <div v-for="i in 2" :style="'width: calc(50% - 1px); height: 50px'">calc(50% - 1px)</div>
+      </div>
+      </section>
+
   </div>`,
   data: function () {
     return {
@@ -69,7 +105,9 @@ Vue.component('flex', {
         flexBox3: false,
         flexBox4: false,
         flexBox5Reverse: false
-      }
+      },
+      FLEX_WRAPS: FLEX_WRAPS,
+      flex6WrapIdx: 1
     }
   },
   methods: {
