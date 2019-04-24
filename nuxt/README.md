@@ -2,6 +2,7 @@ nuxt sample
 ===========
 
 ```
+yarn install
 yarn dev
 ```
 
@@ -16,7 +17,7 @@ memo
 ----
 
 - コマンドでspaモードを指定する: `yarn dev -- --spa`
-- 
+- リンクには *NuxtLink* タグ を利用する
 
 create project by skrach
 ------------------------
@@ -61,3 +62,10 @@ yarn add nuxt
   - [設定 \- Nuxt\.js](https://ja.nuxtjs.org/guide/configuration)
 - package.json
 
+
+sassが動作するようにする
+--------------------
+
+```
+yarn add -D sass-loader node-sass nuxt-sass-resources-loader
+```

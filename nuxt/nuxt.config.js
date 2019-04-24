@@ -1,4 +1,9 @@
 module.exports = {
   mode: 'spa',
-  css: ['~/assets/main.css']
+  // modules: ['nuxt-sass-resources-loader', [
+  //   '~/assets/main.scss'
+  // ]],
+  css: [
+    { src: '~/assets/main.scss', lang: 'scss' }
+  ]
 }
