@@ -1,3 +1,4 @@
 module.exports = {
-  mode: 'spa'
+  mode: 'spa',
+  css: ['~/assets/main.css']
 }

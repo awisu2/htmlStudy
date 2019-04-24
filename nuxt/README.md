@@ -5,7 +5,20 @@ nuxt sample
 yarn dev
 ```
 
-create project by sklach
+- deploy:
+  - [コマンド \- Nuxt\.js](https://ja.nuxtjs.org/guide/commands/)
+  - `nuxt build`
+  - `nuxt start`
+- 静的ファイル生成: `nuxt generate`
+  - apache, httpdなど サーバ上のルートに設置すると動作するファイルが生成される
+
+memo
+----
+
+- コマンドでspaモードを指定する: `yarn dev -- --spa`
+- 
+
+create project by skrach
 ------------------------
 
 *package.json*

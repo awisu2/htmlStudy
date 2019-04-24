@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <a href="/">top</a>
-    <a href="/index2">index2</a>
-    <a href="/sub">sub</a>
+    <NuxtLink to="/">top</NuxtLink>
+    <NuxtLink to="/index2">index2</NuxtLink>
+    <NuxtLink to="/sub">sub</NuxtLink>
   </nav>
 </template>
