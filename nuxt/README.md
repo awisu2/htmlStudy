@@ -45,6 +45,37 @@ yarn add nuxt
 </template>
 ```
 
+add sass
+--------
+
+`yarn add -D sass-loader node-sass nuxt-sass-resources-loader`
+
+*nuxt.config.js*
+
+```js
+  ...
+  css: [
+    { src: '~/assets/main.scss', lang: 'scss' }
+  ],
+```
+
+add pwa
+-------
+
+`yarn add '@nuxtjs/pwa'`
+
+*nuxt.config.js*
+
+```js
+  ...
+  modules: [
+    '@nuxtjs/pwa'
+  ],
+  workbox: {
+    dev: true, // enable run on dec
+  }
+```
+
 ディレクトリ/ファイル構造
 ----------------
 
@@ -63,9 +94,3 @@ yarn add nuxt
 - package.json
 
 
-sassが動作するようにする
---------------------
-
-```
-yarn add -D sass-loader node-sass nuxt-sass-resources-loader
-```
