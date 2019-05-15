@@ -31,7 +31,7 @@ Vue.component('height', {
       </div>
 
       <div style="margin: 10px; background: #0F0000;">
-        なにか文字を入れると相殺しない(下方向はなにもないので相殺していない)
+        なにか文字を入れると相殺しない(下方向はなにもないので相殺している)
         <div style="margin: 50px; background: #0F0; border: solid 1px #666;">
           margin: 10, margin: 50
         </div>
