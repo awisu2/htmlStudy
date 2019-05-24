@@ -25,6 +25,7 @@
       <overflow v-if="current==='overflow'"></overflow>
       <height v-if="current==='height'"></height>
       <color v-if="current==='color'"></color>
+      <c-progress v-if="current==='progress'"></c-progress>
     </div>
 
     <section class="nav">
@@ -42,13 +43,15 @@
   <script src="js/overflow.js"></script>
   <script src="js/height.js"></script>
   <script src="js/color.js"></script>
+  <script src="js/progress.js"></script>
   <script type="text/javascript">
     const NAVS =  [
       'top',
       'flex',
       'overflow',
       'height',
-      'color'
+      'color',
+      'progress'
     ]
     var app = new Vue({
       el: '#app',
